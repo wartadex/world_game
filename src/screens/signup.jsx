@@ -73,7 +73,7 @@ export default function SignUp({ auth }) {
   useEffect(() => {
     if (error) {
       toast.error(
-        `Ow no 😔 it seems that we had trouble to create your account, try again! Reason : ${error.message}`
+        `Oh no 😔! It seems that we had trouble creating your account. Try again! Reason : ${error.message}`
       )
     }
   }, [error])
@@ -82,7 +82,7 @@ export default function SignUp({ auth }) {
     return <Loader />
   }
   if (user && !updating) {
-    toast.success("Yay! 😍 Your account has been created");
+    toast.success("Yay! 😍 Your account has been created!");
     return <Navigate to="/" />;
   }
 
@@ -93,7 +93,7 @@ export default function SignUp({ auth }) {
           <Title text="Welcome!" />
           <div className="p-10 lg:p-20 w-full">
             <FormInput
-              label="Email*"
+              label="Email"
               type="mail"
               name="Email"
               placeholder="Enter your email"
@@ -101,7 +101,7 @@ export default function SignUp({ auth }) {
               setValue={(e) => validateEmail(e)}
             />
             <FormInput
-              label="Username*"
+              label="Username"
               type="text"
               name="username"
               placeholder="Enter a username"
@@ -111,26 +111,26 @@ export default function SignUp({ auth }) {
               label="Password"
               type="password"
               name="Password"
-              placeholder="*****"
+              placeholder="********"
               borderColor={!passwordValid && password ? `red` : "#e5e7eb"}
               setValue={(e) => checkPasswordValid(e)}
             />
             {!passwordValid && password && (
               <p className="text-rose-600 mt-0 mb-6">
-                password must contain at least 8 characters
+                Password must contain at least 8 characters!
               </p>
             )}
             <FormInput
               label="Confirm your password"
               type="password"
               name="ConfirmPassword"
-              placeholder="*****"
+              placeholder="********"
               borderColor={!passwordConfirmed && password ? `red` : "#e5e7eb"}
               setValue={(e) => verifyPassword(e)}
             />
             {!passwordConfirmed && password ? (
               <p className="text-rose-600 mt-0 mb-6">
-                Password must be equal!
+                Passwords must be identical!
               </p>
             ) : (
               <></>
@@ -192,12 +192,12 @@ function TermsCheckbox(props) {
         id=""
       />
       <h3>
-        by clicking on Sign Up you agree{" "}
+        By clicking Sign Up, you agree{" "}
         <Popup
           defaultOpen={false}
           trigger={
             <span className="text-primary cursor-pointer">
-              to the terms and conditions
+              to the Terms and Conditions
             </span>
           }
           modal

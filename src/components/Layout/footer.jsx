@@ -8,7 +8,7 @@ export default function Footer() {
           className="underline text-primary"
           href="https://github.com/wartadex"
         >
-          Ikram Saitov
+          PhySc1, Group 5
         </a>{" "}
         with ❤️
       </>

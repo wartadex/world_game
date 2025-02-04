@@ -76,7 +76,7 @@ export default function Leaderboard() {
                       </p>
                     ) : (
                       <p className="text-sm justify-self-start dark:text-lightBackground">
-                        The user didn't shared his username yet.
+                        The user hasn't shared his username yet.
                       </p>
                     )}
                   </span>
