@@ -1,7 +1,6 @@
 // компоненты
 import Header from "../components/Layout/header"
 import Loader from "../components/Utils/Loader"
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
 
 // auth
 import { useAuthState } from "react-firebase-hooks/auth"
