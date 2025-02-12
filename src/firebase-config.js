@@ -1,9 +1,9 @@
 export const firebaseConfig = {
-  apiKey: "AIzaSyDVmzb5zPjTADG_uOUw641hZITvMKjcge4",
-  authDomain: "where-in-the-world-game.firebaseapp.com",
-  projectId: "where-in-the-world-game",
-  storageBucket: "where-in-the-world-game.appspot.com",
-  messagingSenderId: "304834358530",
-  appId: "1:304834358530:web:90d892309ef104dde5661b",
-  measurementId: "G-LT1C38389Q",
+  apiKey: "AIzaSyBiy73tkKIUB-8SKB5ECF3mJqMsnJkRlfU",
+  authDomain: "world-game-7c891.firebaseapp.com",
+  projectId: "world-game-7c891",
+  storageBucket: "world-game-7c891.firebasestorage.app",
+  messagingSenderId: "709658826017",
+  appId: "1:709658826017:web:73999a11cb8ae90c82da60",
+  measurementId: "G-WBBXDXCB67"
 };
